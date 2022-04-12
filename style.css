@@ -1,0 +1,95 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+h1{
+    text-align: center;
+}
+section.question-name h1{
+    background-color: #00000000;
+    color: white;
+}
+
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section div{
+    display: flex;
+    width: 32.5%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#final_box{
+    box-sizing: border-box;
+    padding: 20px;
+}
+.change-color{
+    background-color: #cfe3ff;
+}
+.checked{
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+}
+.opacity{
+    opacity: 0.6;
+}
+.hidden{
+    display: none;
+}
+img{
+    width: 100%;
+}
+section[data-id="1"]{
+    background: linear-gradient(#ffffff, #42c01c);
+    border-radius: 5px;
+}
+section[data-id="2"]{
+    background: linear-gradient(#232d92,#000000);
+    border-radius: 5px;
+}
+section[data-id="3"]{
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 5px;
+}
+
+#title{
+    text-align: center;
+    font-size: 35px;
+}
+#text{
+    text-align: justify;
+}
+
+#reset_button{
+    padding-top: 17px;
+    background-color: #cecece;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+#reset_button:hover{
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 700px) {
+
+    header div{
+        display: none;
+    }
+    article {
+        width: 95%;
+    }
+}
+@media (max-width: 500px){
+    div[data-choice-id]{
+        width: 49%;
+    }
+}
+
+
